@@ -1,0 +1,169 @@
+body {
+    background-color: white;
+}
+
+
+button[type="submit"] {
+    background-color: wheat;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+.imgban {
+    background-image: url("images/lunette.jpg");
+    height: 450px;
+    background-size: cover;
+    margin-top: 30px;
+
+}
+
+.navi {
+    background-color: wheat;
+}
+
+.navi ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    color: white
+}
+
+.navi li {
+    display: flex;
+    color: wheat;
+
+}
+
+.card {
+    color: black;
+    text-align: center;
+    font-style: italic;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.container {
+    background-color: wheat;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.card {
+    display: inline-block;
+}
+
+.loogin {
+    color: wheat;
+}
+
+.bande-noire {
+    height: 200px;
+    background-color: wheat;
+    color: #fff;
+    padding: 20px;
+}
+
+.bande-noire h2 {
+    color: #000;
+    background-color: wheat;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bande-noire p {
+    background-color: wheat;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background-color:white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.payer {
+    background-color: rgb(red, green, blue);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
