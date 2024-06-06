@@ -154,3 +154,25 @@ lunettes-shop/
 ├── ajouterlunettebdd.php # Script de traitement pour ajouter une lunette à la BDD
 ├── bdd.php             # Connexion à la base de données
 └── README.md           # Documentation du projet
+```
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre ces étapes :
+
+1. Fork le projet
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-nouvelle-fonctionnalité`)
+3. Commitez vos modifications (`git commit -m 'Ajout de ma nouvelle fonctionnalité'`)
+4. Pushez la branche (`git push origin feature/ma-nouvelle-fonctionnalité`)
+5. Ouvrez une Pull Request
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## Contact
+
+Pour toute question, veuillez contacter :
+
+- Nom : Votre Nom
+- Email : votre.email@example.com
+- GitHub : [votreutilisateur](https://github.com/votreutilisateur)
