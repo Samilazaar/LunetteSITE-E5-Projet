@@ -15,7 +15,7 @@ Bienvenue sur Lunettes Shop, votre destination en ligne pour des lunettes élég
 
 ## Aperçu
 
-Lunettes Shop est un site web de commerce électronique permettant aux utilisateurs de parcourir et d'acheter une variété de lunettes. Le site est conçu pour être intuitif et convivial, offrant une expérience de magasinage agréable.
+LunettesSITE est un site web de commerce électronique permettant aux utilisateurs de parcourir et d'acheter une variété de lunettes. Le site est conçu pour être intuitif et convivial, offrant une expérience de magasinage agréable.
 
 ## Fonctionnalités
 
@@ -173,6 +173,5 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 Pour toute question, veuillez contacter :
 
-- Nom : Votre Nom
-- Email : votre.email@example.com
-- GitHub : [votreutilisateur](https://github.com/votreutilisateur)
+- Nom : LAZAAR
+- Email : samie17030@gmail.com
