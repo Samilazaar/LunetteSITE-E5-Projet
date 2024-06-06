@@ -9,9 +9,8 @@ Bienvenue sur Lunettes SITE, votre destination en ligne pour des lunettes élég
 3. [Installation](#installation)
 4. [Utilisation](#utilisation)
 5. [Structure du projet](#structure-du-projet)
-6. [Contributions](#contributions)
-7. [Licence](#licence)
-8. [Contact](#contact)
+6. [Licence](#licence)
+7. [Contact](#contact)
 
 ## Aperçu
 
