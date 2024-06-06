@@ -90,13 +90,6 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
         PRIMARY KEY (id)
     );
 
-    CREATE TABLE demandes_sav (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nomClient VARCHAR(255),
-        numeroTelephone VARCHAR(20),
-        descriptionProbleme TEXT
-    );
-
     INSERT INTO Lunette (nom, image, prix, couleur, marque) VALUES 
     ("Lunette Moscot", "/images/MoscotLem.png", 500, "foncé", "Moscot"),
     ("Lunette Gucci", "/images/shopping-3.png", 300, "foncé", "Gucci"),
