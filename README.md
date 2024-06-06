@@ -1,55 +1,92 @@
-# Documentation du Projet LunetteSITE
+# LunetteSITE
 
-## Sommaire
-1. [Page d'Inscription](#page-dinscription)
-2. [Création de la Base de Données](#création-de-la-base-de-données)
-3. [Gestion du Panier](#gestion-du-panier)
-4. [Page de Connexion](#page-de-connexion)
-5. [Ajout de Lunettes](#ajout-de-lunettes)
-6. [Suppression de Lunettes](#suppression-de-lunettes)
+## Description
 
-## Page d'Inscription
+LunetteSITE est une application web permettant aux utilisateurs de s'inscrire, se connecter et acheter des lunettes. Elle comporte plusieurs interfaces principales : une interface d'inscription, une interface de connexion, une interface de présentation des lunettes, et une interface d'administration.
 
-### HTML et PHP
-```html
-<!DOCTYPE html>
-<html>
-<a href="index.php">
-    <img src="moderne.png" alt="" width="10%" height="10%" title="Découvrez notre logo !" />
-</a>
+## Fonctionnalités
 
-<?php session_start(); ?>
+### Inscription et Connexion
 
-<head>
-    <link href="site.css" rel="stylesheet">
-    <title>Inscription - Mon site</title>
-</head>
+- Inscription de nouveaux utilisateurs
+- Connexion des utilisateurs existants
 
-<body>
-<?php 
-$hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
+### Présentation des Lunettes
 
-if (password_verify('rasmuslerdorf', $hash)) {
-} else {
-    echo 'Le mot de passe est invalide.';
-}
-?>
-    <div class="container">
-        <h1>Inscription</h1>
-        <form action="base.php" method="post">
-            <div class="form-row">
-                <input type="text" name="nom" placeholder="Nom">
-                <input type="text" name="prenom" placeholder="Prénom">
-            </div>
-            <input type="email" name="mail" placeholder="Email">
-            <div class="form-row">
-                <input type="password" name="motdepasse" placeholder="Saisir votre mot de passe">
-                <input type="password" name="confmotdepasse" placeholder="Confirmez Mot de Passe">
-            </div>
-            <input type="submit" value="Envoyez">
-        </form>
-    </div>
-</body>
+- Affichage des lunettes disponibles
+- Recherche de lunettes par prix et couleur
+- Ajout de lunettes au panier
+- Visualisation du panier
 
-</html>
+### Administration
 
+- Ajout de nouvelles lunettes
+- Suppression de lunettes existantes
+
+## Installation
+
+### Prérequis
+
+- Serveur Apache
+- Serveur MySQL
+- PHP
+
+### Configuration de la base de données
+
+Ouvrez votre terminal MySQL et exécutez les commandes suivantes pour créer la base de données et les tables nécessaires :
+
+```sql
+DROP DATABASE IF EXISTS LunetteSITE;
+CREATE DATABASE IF NOT EXISTS LunetteSITE;
+USE LunetteSITE;
+
+CREATE TABLE Utilisateur (
+    id INT NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(250),
+    prenom VARCHAR (250),
+    mdp VARCHAR(250),
+    mail VARCHAR(250),
+    administrateur BOOLEAN, PRIMARY KEY (ID)
+);
+
+CREATE TABLE Lunette (
+    id INT NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(250),
+    image VARCHAR(250),
+    prix DECIMAL(10,2),
+    couleur VARCHAR (250),
+    marque VARCHAR(250), PRIMARY KEY (ID)
+);
+
+CREATE TABLE Panier (
+    idPanier INT NOT NULL AUTO_INCREMENT,
+    idUser INT,
+    idProducts INT,
+    quantite INT,
+    PRIMARY KEY (IDPanier),
+    FOREIGN KEY (IDUser) REFERENCES Utilisateur (ID),
+    FOREIGN KEY (IDProducts) REFERENCES Lunette (ID)
+);
+
+CREATE TABLE HistoriquePanier (
+    id INT NOT NULL AUTO_INCREMENT,
+    nom VARCHAR (250),
+    action VARCHAR(250),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE demandes_sav (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nomClient VARCHAR(255),
+    numeroTelephone VARCHAR(20),
+    descriptionProbleme TEXT
+);
+
+CREATE TABLE DossierSAV (
+    idSAV INT NOT NULL AUTO_INCREMENT,
+    Date VARCHAR(250),
+    Vendeur VARCHAR(250),
+    prix DECIMAL(10,2),
+    marque VARCHAR(250), PRIMARY KEY (ID)
+);
+### Insertion de Données dans les Tables
