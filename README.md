@@ -144,15 +144,6 @@ lunettes-shop/
 ├── bdd.php             # Connexion à la base de données
 └── README.md           # Documentation du projet
 ```
-## Contributions
-
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre ces étapes :
-
-1. Fork le projet
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-nouvelle-fonctionnalité`)
-3. Commitez vos modifications (`git commit -m 'Ajout de ma nouvelle fonctionnalité'`)
-4. Pushez la branche (`git push origin feature/ma-nouvelle-fonctionnalité`)
-5. Ouvrez une Pull Request
 
 ## Contact
 
