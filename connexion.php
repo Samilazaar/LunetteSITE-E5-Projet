@@ -39,6 +39,7 @@
                 $_SESSION['id'] = $user['id'];
                 $_SESSION['mail'] = $user['mail'];
                 $_SESSION['nom'] = $user['nom']; // Remplacez 'nom' par le nom de la colonne qui contient le nom de l'utilisateur
+                $_SESSION['administrateur'] = $user['administrateur'];
                 $requete2 = $bdd->prepare('SELECT *,quantite FROM Lunette
                 INNER JOIN panier ON Lunette.id = panier.idproducts
             

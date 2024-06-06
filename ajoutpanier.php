@@ -7,7 +7,7 @@ $iduser = $_SESSION['id'];
 $nom = $_SESSION['nom'];
 $action ='ajout';
 $nb = 1;
-var_dump($nb);
+//var_dump($nb);
 $stmt = $bdd->prepare("INSERT INTO Panier (idUser,idProducts,quantite) VALUES (:idUser, :idProducts, :quantite);");
 $stmt->execute([
     "idUser" => $iduser,

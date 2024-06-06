@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php session_start();
-if (isset($_SESSION['nom'])) {
+if (isset($_SESSION['nom']) || isset($_SESSION['administrateur'])) {
     $connecter = true;
 } else {
     $connecter = false;
@@ -12,7 +12,7 @@ if (isset($_SESSION['nom'])) {
 <html lang="en">
 
 <head>
-    <?php require('bst.php');
+    <?php require ('bst.php');
     ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,13 +35,29 @@ if (isset($_SESSION['nom'])) {
             echo "Bienvenue " . $_SESSION['nom'] . " !"; ?>
             <a href="deconnexion.php"><input type="button" value="Deconnexion"></a>
             <?php
+            if ($_SESSION['administrateur']) {
+                ?><a href="admin.php"><input type="button" value="Menu Admin"></a>
+                
+                <?php
+
+            }
+
+
+            ?>
+            <?php
         } else { ?>
             <a href="inscription.php"><input type="button" value="Inscription"></a>
             <a href="connexion.php"><input type="button" value="Connexion"></a>
             <?php
         }
         ?>
+        <a href="prixinferieur.php">
+            <button type="button">Afficher les lunettes inférieures à 500 €</button>
+        </a>
 
+        <a href="prixinferieurclair.php">
+            <button type="button">Afficher les lunettes inférieures à 500 € et clair</button>
+        </a>
 
 
 
