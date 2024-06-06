@@ -3,27 +3,25 @@
 ## Description
 
 LunetteSITE est une application web permettant aux utilisateurs de s'inscrire, se connecter et acheter des lunettes. Elle comporte plusieurs interfaces principales : une interface d'inscription, une interface de connexion, une interface de présentation des lunettes, et une interface d'administration.
+## Structure des Fichiers
 
-## Fonctionnalités
+- `index.php` : Page d'accueil de l'application.
+- `inscription.php` : Interface d'inscription des utilisateurs.
+- `connexion.php` : Interface de connexion des utilisateurs.
+- `admin.php` : Interface d'administration pour la gestion des lunettes.
+- `ajouterlunette.php` : Page permettant d'ajouter une nouvelle lunette à la base de données.
+- `supprimerlunette.php` : Page permettant de supprimer une lunette de la base de données.
+- `panier.php` : Interface permettant de visualiser le panier d'achat.
+- `ajoutpanier.php` : Page pour ajouter une lunette au panier d'un utilisateur.
+- `bdd.php` : Fichier de configuration de la connexion à la base de données.
+- `site.css` : Feuille de style CSS pour la mise en forme de l'application.
 
-### Inscription et Connexion
+## Utilisation
 
-- Inscription de nouveaux utilisateurs
-- Connexion des utilisateurs existants
-
-### Présentation des Lunettes
-
-- Affichage des lunettes disponibles
-- Recherche de lunettes par prix et couleur
-- Ajout de lunettes au panier
-- Visualisation du panier
-
-### Administration
-
-- Ajout de nouvelles lunettes
-- Suppression de lunettes existantes
-
-## Installation
+- **Inscription et Connexion :** Les utilisateurs peuvent s'inscrire ou se connecter à l'application à l'aide des interfaces dédiées.
+- **Présentation des Lunettes :** Les lunettes disponibles sont présentées sur la page d'accueil, avec la possibilité de les ajouter au panier.
+- **Administration :** Les administrateurs peuvent ajouter de nouvelles lunettes ou en supprimer via l'interface d'administration.
+- **Panier :** Les utilisateurs connectés peuvent visualiser leur panier d'achat sur la page dédiée.
 
 ### Prérequis
 
@@ -31,6 +29,14 @@ LunetteSITE est une application web permettant aux utilisateurs de s'inscrire, s
 - Serveur MySQL
 - PHP
 
+### Configuration de la Base de Données
+
+1. Clonez ce repository sur votre machine locale :
+
+```sh
+git clone <url-du-repository>
+cd LunetteSITE
+```
 ### Configuration de la base de données
 
 Ouvrez votre terminal MySQL et exécutez les commandes suivantes pour créer la base de données et les tables nécessaires :
@@ -89,4 +95,24 @@ CREATE TABLE DossierSAV (
     prix DECIMAL(10,2),
     marque VARCHAR(250), PRIMARY KEY (ID)
 );
+```
 ### Insertion de Données dans les Tables
+``` sql
+INSERT INTO Lunette (nom, image, prix, couleur, marque) VALUES 
+("Lunette Moscot", "/images/MoscotLem.png", 500, "foncé", "Moscot"),
+("Lunette Gucci", "/images/shopping-3.png", 300, "foncé", "Gucci"),
+("Lunette Louis Vuitton", "/images/shopping-4.png", 650, "foncé", "Louis Vuitton"),
+("Lunette Epos", "/images/shopping.png", 320, "foncé", "Epos"),
+("Lunette Persol", "/images/shopping-5.png", 350, "clair", "Persol");
+```
+### Configuration de l'application
+
+Clonez ce repository sur votre machine locale.
+
+```sh
+git clone <url-du-repository>
+cd <nom-du-repository>
+```
+
+
+DOC PAS TERMINÉ
