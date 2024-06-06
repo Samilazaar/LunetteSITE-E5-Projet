@@ -34,15 +34,14 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
 
 - [MySQL](https://www.mysql.com/)
 - [PHP](https://www.php.net/)
-- Un serveur web tel que [Apache](https://httpd.apache.org/) ou [Nginx](https://www.nginx.com/)
 
 ### Étapes
 
 1. Clonez le dépôt :
 
     ```bash
-    git clone https://github.com/votreutilisateur/lunettes-shop.git
-    cd lunettes-shop
+    git clone https://github.com/SamiLazaar/LunetteSITE-E5.git
+    cd LunetteSITE
     ```
 
 2. Configurez la base de données MySQL :
@@ -110,9 +109,6 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
     ("Lunette Gucci", "/images/jaitousaprouver.jpeg", 1000, "foncé", "Gucci"),
     ("Lunette Moncler", "/images/moncler.jpeg", 100, "foncé", "Moncler"),
     ("Lunette Prada", "/images/prada.jpeg", 200, "clair", "Prada");
-
-    INSERT INTO Panier (idUser, idProducts, quantite) VALUES (1, 1, 1);
-    INSERT INTO Panier (idUser, idProducts, quantite) VALUES (2, 3, 2);
     ```
 
 3. Configurez votre serveur web pour servir les fichiers PHP.
@@ -129,7 +125,7 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
 ### Backend
 
 - Connectez-vous en tant qu'administrateur pour accéder aux fonctionnalités de gestion des produits et des commandes.
-- Gérez les demandes de service après-vente (SAV) depuis l'interface administrateur.
+- compte admin / email : sami@gmail.com mdp : sa
 
 ## Structure du projet
 
@@ -164,10 +160,6 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez s
 3. Commitez vos modifications (`git commit -m 'Ajout de ma nouvelle fonctionnalité'`)
 4. Pushez la branche (`git push origin feature/ma-nouvelle-fonctionnalité`)
 5. Ouvrez une Pull Request
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## Contact
 
