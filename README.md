@@ -1,6 +1,6 @@
-# Lunettes Shop
+# Lunettes SITE
 
-Bienvenue sur Lunettes Shop, votre destination en ligne pour des lunettes élégantes et fonctionnelles.
+Bienvenue sur Lunettes SITE, votre destination en ligne pour des lunettes élégantes et fonctionnelles.
 
 ## Table des matières
 
