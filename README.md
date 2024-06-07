@@ -25,7 +25,7 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
 - Passer une commande
 - Authentification des utilisateurs
 - Section admin pour gérer les produits et les commandes
-- Gestion des demandes de service après-vente (SAV)
+
 
 ## Installation
 
@@ -36,14 +36,8 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
 
 ### Étapes
 
-1. Clonez le dépôt :
 
-    ```bash
-    git clone https://github.com/SamiLazaar/LunetteSITE-E5.git
-    cd LunetteSITE
-    ```
-
-2. Configurez la base de données MySQL :
+1. Configurez la base de données MySQL :
 
     - Connectez-vous à votre serveur MySQL et exécutez le script SQL fourni pour créer la base de données et les tables :
 
@@ -103,9 +97,9 @@ LunettesSITE est un site web de commerce électronique permettant aux utilisateu
     ("Lunette Prada", "/images/prada.jpeg", 200, "clair", "Prada");
     ```
 
-3. Configurez votre serveur web pour servir les fichiers PHP.
+2. Configurez votre serveur web pour servir les fichiers PHP.
 
-4. Placez les fichiers de votre projet dans le répertoire du serveur web.
+3. Placez les fichiers de votre projet dans le répertoire du serveur web.
 
 ## Utilisation
 
